@@ -6,7 +6,7 @@
 /*   By: fatemeh <fatemeh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 15:37:09 by fatemeh           #+#    #+#             */
-/*   Updated: 2026/04/21 15:48:43 by fatemeh          ###   ########.fr       */
+/*   Updated: 2026/04/30 16:38:02 by fatemeh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,6 @@ static int	all_done(t_coder *coders)
 
 	cfg = coders[0].cfg;
 	req = cfg->number_of_compiles_required;
-	if (req <= 0)
-		return (0);
 	n = cfg->number_of_coders;
 	pthread_mutex_lock(&cfg->state_mutex);
 	i = 0;
