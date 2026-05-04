@@ -6,7 +6,7 @@
 /*   By: fatemeh <fatemeh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 15:43:05 by fatemeh           #+#    #+#             */
-/*   Updated: 2026/04/21 15:47:54 by fatemeh          ###   ########.fr       */
+/*   Updated: 2026/05/04 17:26:53 by fatemeh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,17 @@ static void	unlock_pair(t_dongle *a, t_dongle *b)
  * scheduler.c. 
  * @param coder Pointer to the coder.
  * @return 0 on success, 1 if simulation stopped before acquiring.
+ * 
+	while simulation running:
+		lock both dongles
+		if both free AND cooldown passed:
+			take them
+			log
+			unlock
+			return success
+		unlock
+		wait a little
+
  */
 int	dongles_acquire_pair(t_coder *coder)
 {
