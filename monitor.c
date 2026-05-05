@@ -6,7 +6,7 @@
 /*   By: fatemeh <fatemeh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 15:37:09 by fatemeh           #+#    #+#             */
-/*   Updated: 2026/04/30 16:38:02 by fatemeh          ###   ########.fr       */
+/*   Updated: 2026/05/04 20:06:42 by fatemeh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static void	stop_simulation(t_config *cfg)
  * @brief Check if all coders finished required compiles.
  *
  * If number_of_compiles_required is 0, this returns 0 (not finished),
- * because the subject expects the simulation to stop only when a coder
+ * because it expects the simulation to stop only when a coder
  * burns out or when everyone reached the required count.
  *
  * @param coders Pointer to the coders array.
